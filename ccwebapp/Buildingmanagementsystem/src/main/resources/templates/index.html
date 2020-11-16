@@ -1,0 +1,64 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}"lang="en">
+<head>
+    <title>Home</title>
+</head>
+<body>
+<div layout:fragment="content" >
+    <div class="container" style="width:100%;height:70%">
+        <div class="jumbotron backimage">
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img class="center" src="../images/56Q.jpg" alt="56 Queenberry street,Boston MA=02215" style="width:100%" >
+            </div>
+            <div class="mySlides" >
+                <div class="numbertext">2 / 4</div>
+                <img class="center" src="../images/58Q.jpg" alt="58 Queenberry street,Boston MA=02215" style="width:100%" >
+            </div>
+
+            <div class="mySlides" >
+                <div class="numbertext">4 / 4</div>
+                <img class="center" src="../images/62Q.jpg" alt="62 Queenberry street,Boston MA=02215"  style="width:100%">
+            </div>
+            <div class="mySlides" >
+                <div class="numbertext">3 / 4</div>
+                <img class="center" src="../images/66Q.jpeg" alt="66 Queenberry street,Boston MA=02215"  style="width:100%">
+            </div>
+
+            <a class="prev center" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next center" onclick="plusSlides(1)">&#10095;</a>
+            <!-- Image text -->
+            <div class="caption-container" style="width:100%">
+                <p id="caption"></p>
+            </div>
+            <div class="row">
+                <div class="col-md-3" >
+                    <img class="demo cursor" src="../images/56Q.jpg" height="225" width="230" onclick="currentSlide(0)" alt="56 Queenberry street,Boston MA=02215">
+                </div>
+                <div class="col-md-3">
+                    <img class="demo cursor" src="../images/58Q.jpg"height="225" width="230" onclick="currentSlide(1)" alt="58 Queenberry street,Boston MA=02215">
+                </div>
+                <div class="col-md-3">
+                    <img class="demo cursor" src="../images/62Q.jpg" height="225" width="230" onclick="currentSlide(2)" alt="62 Queenberry street,Boston MA=02215">
+                </div>
+                <div class="col-md-3">
+                    <img class="demo cursor" src="../images/66Q.jpeg" height="225" width="230" onclick="currentSlide(3)" alt="66 Queenberry street,Boston MA=02215">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" width="100" height="100">
+        <div class="row">
+            <div class="col-md-4"><a href="/announcements"><img src="../images/homelogo.png" alt="viewAnnouncements" width="70%" height="50%"></a></div>
+            <div class="col-md-4"><a href="@{/announcements}"><img src="../images/homelogo.png" alt="viewAnnouncements" width="70%" height="50%"></a></div>
+            <div class="col-md-4"><a href="@{/announcements}"><img src="../images/homelogo.png" alt="viewAnnouncements" width="70%" height="50%"></a></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"><a href="@{/announcements}"><img src="../images/homelogo.png" alt="viewAnnouncements" width="70%" height="50%"></a></div>
+            <div class="col-md-4"><a href="@{/announcements}"><img src="../images/homelogo.png" alt="viewAnnouncements" width="70%" height="50%"></a></div>
+            <div class="col-md-4"><a href="@{/announcements}"><img src="../images/homelogo.png" alt="viewAnnouncements" width="70%" height="50%"></a></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
